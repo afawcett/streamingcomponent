@@ -16,6 +16,8 @@ Instructions
 5. Issue the following code from Execute Annonymous
 6. Observe the message in the Lightning page created above
 
+**NOTE:** This component will work with PushTopic's as well.
+
 ~~~~
 // Create event to publish
 List<MyEvent__e> events = new List<MyEvent__e>();
