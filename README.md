@@ -11,7 +11,7 @@ Lightning Component for the Salesforce Streaming API based on the examples [here
 Documentation
 -------------
 
-This is working in progress, there is also a blog to follow with more details on the architecture. In short it leverages Lightning Container Component with a small NodeJS browser app to connect to the Streaming API and proxy messages back to the outer Lightning Component.
+This is work in progress, there is also a blog to follow with more details on the architecture. In short it leverages Lightning Container Component with a small NodeJS browser app to connect to the Streaming API and proxy messages back to the outer Lightning Component.
 
 ~~~~
 <aura:component implements="flexipage:availableForAllPageTypes">
