@@ -1,6 +1,8 @@
 # Streaming Component
 Lightning Component for the Salesforce Streaming API
 
+**IMPORTANT NOTE**: This is based on pre-release functionality from Salesforce.
+
 <a href="https://githubsfdeploy.herokuapp.com">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
