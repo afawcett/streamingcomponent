@@ -32,6 +32,8 @@ This is work in progress, there is also a blog to follow with more details on th
 
 **NOTE:** This component will work with PushTopic's as well.
 
+![Demo](https://raw.githubusercontent.com/afawcett/streamingcomponent/master/images/StreamingAPIDemo.png)
+
 Instructions
 ------------
 
