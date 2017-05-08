@@ -1,0 +1,9 @@
+{
+    "landing-pages" : [
+        {
+            "path": "index.html",
+			"content-security-policy-type": "custom",
+			"content-security-policy": "default-src *;"
+		}
+    ]
+}
