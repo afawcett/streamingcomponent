@@ -1,4 +1,4 @@
-# streamingcomponent
+# Streaming Component
 Lightning Component for the Salesforce Streaming API
 
 <a href="https://githubsfdeploy.herokuapp.com">
