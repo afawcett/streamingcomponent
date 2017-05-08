@@ -1,5 +1,5 @@
 # Streaming Component
-Lightning Component for the Salesforce Streaming API
+Lightning Component for the Salesforce Streaming API based on the examples [here](https://github.com/developerforce/LightningContainerExamples).
 
 **IMPORTANT NOTE**: This is based on pre-release functionality from Salesforce.
 
