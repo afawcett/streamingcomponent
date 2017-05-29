@@ -1,7 +1,7 @@
 # Streaming API Lightning Component
 Lightning Component for the Salesforce Streaming API based on the examples [here](https://github.com/developerforce/LightningContainerExamples).
 
-**IMPORTANT NOTE**: This is based on pre-release functionality from Salesforce.
+**IMPORTANT NOTE CURRENTLY BROKEN**: This is based on pre-release functionality from Salesforce. At this moment in time this component does not function due to how custom CSP configuration is implemented and a subtly between WebSocket URL's, wss protocol and the connect-src 'self' CSP attribute. You can read more here. https://github.com/developerforce/LightningContainerExamples/issues/4
 
 <a href="https://githubsfdeploy.herokuapp.com">
   <img alt="Deploy to Salesforce"
