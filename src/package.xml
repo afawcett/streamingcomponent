@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-	<types>
-		<members>*</members>
-		<name>StaticResource</name>
-	</types>
     <types>
-    	<members>*</members>
+        <members>Streaming</members>
+        <members>StreamingDemo</members>
+        <members>StreamingEvent</members>
         <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>SessionController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>cometd</members>
+        <name>StaticResource</name>
     </types>
     <version>37.0</version>
 </Package>
