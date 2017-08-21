@@ -1,6 +1,8 @@
 <aura:component implements="flexipage:availableForAllPageTypes">
     <aura:attribute name="lastMessagePayload" type="String" access="private"/>
     <aura:handler name="messageReceived" event="c:StreamingEvent" action="{!c.handleMessage}"/>
-	<c:streaming channel="/event/MyEvent__e"/>
+	<c:Streaming channel="/event/MyEvent__e"/>
+    <lightning:card >
     <div>{!v.lastMessagePayload}</div>
+    </lightning:card>
 </aura:component>

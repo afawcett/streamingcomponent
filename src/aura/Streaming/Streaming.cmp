@@ -1,9 +1,5 @@
-<aura:component access="global">
+<aura:component access="global" controller="SessionController">
     <aura:attribute name="channel" type="String" required="true"/>
     <aura:registerEvent name="messageReceived" type="c:StreamingEvent"/>
-    <div class="hide">
-        <lightning:container src="{!$Resource.streaming + '/index.html?channel=' + v.channel}"
-            onmessage="{!c.handleMessage}"
-            onerror="{!c.handleError}"/>
-    </div>
+    <ltng:require scripts="{!$Resource.cometd + '/cometd.js'}" afterScriptsLoaded="{!c.doInit}" />    
 </aura:component>
