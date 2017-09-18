@@ -14,8 +14,7 @@ This is work in progress, there is also a blog to follow with more details on th
 ~~~~
 <aura:component implements="flexipage:availableForAllPageTypes">
     <aura:attribute name="lastMessagePayload" type="String" access="private"/>
-    <aura:handler name="messageReceived" event="c:StreamingEvent" action="{!c.handleMessage}"/>
-    <c:streaming channel="/event/MyEvent__e"/>
+    <c:streaming channel="/event/MyEvent__e" onMessage="{!c.handleMessage}"/>
     <div>{!v.lastMessagePayload}</div>
 </aura:component>
 ~~~~
