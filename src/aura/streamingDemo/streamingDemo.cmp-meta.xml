@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>streamingDemo</fullName>
+    <apiVersion>38.0</apiVersion>
+</AuraDefinitionBundle>
