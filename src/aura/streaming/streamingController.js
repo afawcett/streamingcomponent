@@ -18,7 +18,8 @@
             cometd.handshake($A.getCallback(function(status) {
                 if (status.successful) {
                     var eventName = component.get("v.channel");
-                    cometd.subscribe(eventName, $A.getCallback(function(message) {
+                    var subscription = 
+                        cometd.subscribe(eventName, $A.getCallback(function(message) {
                             var messageEvent = component.getEvent("onMessage");
 	                        if(messageEvent!=null) {
                                 messageEvent.setParam("payload", message.data.payload);
@@ -26,9 +27,10 @@
 	                        }
                         }
                     ));
+                    component.set('v.subscription', subscription);
                 } else {
                     // TODO: Throw an event / set error property here?
-                    console.log('streaming component: ' + status);
+                    console.error('streaming component: ' + status);
                 }
             }));
 
@@ -36,15 +38,23 @@
         $A.enqueueAction(action);
     },
     handleDestroy : function (component, event, helper) {
-        // Ensure this component disconnects from the server
+        // Ensure this component unsubscribes and disconnects from the server
 		var cometd = component.get("v.cometd");
-        cometd.disconnect(function(disconnectReply) 
-			{ 
-                if(disconnectReply.successful) {
-                    console.log('streaming component: Success disconnect')
-                } else {
-                    console.log('streaming component: Failed disconnect')                    
-                }
-            });
+		var subscription = component.get("v.subscription");
+		cometd.unsubscribe(subscription, {}, function(unsubscribeReply) {
+		    if(unsubscribeReply.successful) {
+                cometd.disconnect(function(disconnectReply) 
+                    { 
+                        console.log('streaming component: Success unsubscribe')
+                        if(disconnectReply.successful) {
+                            console.log('streaming component: Success disconnect')
+                        } else {
+                            console.error('streaming component: Failed disconnect')                    
+                        }
+                    });
+		    } else {
+		        console.error('streaming component: Failed unsubscribe')                    		    
+		    }
+		});
     }
 })
