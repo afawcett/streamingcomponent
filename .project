@@ -19,5 +19,6 @@
 	<natures>
 		<nature>com.salesforce.ide.nature.default</nature>
 		<nature>com.salesforce.ide.nature.online</nature>
+		<nature>mega.lightning.lightningNature</nature>
 	</natures>
 </projectDescription>
