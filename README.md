@@ -1,5 +1,5 @@
 # Streaming API Lightning Component
-Lightning Component for the Salesforce Streaming API based on the examples [here](https://github.com/developerforce/LightningContainerExamples).
+For more information see [here](https://andyinthecloud.com/2017/11/12/platform-events-and-lightning-components/).
 
 <a href="https://githubsfdeploy.herokuapp.com">
   <img alt="Deploy to Salesforce"
